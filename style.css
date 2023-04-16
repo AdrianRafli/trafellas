@@ -21,6 +21,18 @@
   scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
 /* Header */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -40,9 +52,13 @@ header {
   display: flex;
   position: sticky;
   width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 0;
+  transition: all 0.5s ease;
 }
 
 .navbar-logo img {
@@ -51,6 +67,7 @@ header {
 
 .navbar-nav {
   margin-left: 2rem;
+  transition: all 0.5s ease;
 }
 
 .navbar .navbar-nav a {
@@ -90,10 +107,91 @@ header {
   cursor: pointer;
 }
 
+.navbar .navbar-extra i {
+  font-size: 1.4rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-logo img {
+    height: 3rem;
+    padding-left: 40%;
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 0.5rem;
+    margin: 0 0.5rem;
+  }
+
+  .navbar .navbar-extra {
+    display: flex;
+    column-gap: 3px;
+    padding-right: 8%;
+  }
+
+  .navbar .navbar-extra a button {
+    width: 2.6rem;
+    height: 1.3rem;
+    margin-left: 0.5rem;
+    font-size: 0.5rem;
+  }
+
+  .navbar .navbar-extra i {
+    display: block;
+    padding-left: 10px;
+    margin-top: 2px;
+    transition: all 0.5s ease;
+  }
+
+  header .container {
+    padding: 0;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 170px;
+    height: 50vh;
+    background-color: var(--primary);
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar .navbar-nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    transition: all 0.5s ease;
+  }
+  .navbar .navbar-nav a i {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .navbar .navbar-nav a i h5 {
+    margin-top: 10px;
+  }
+
+  .open {
+    right: 0 !important;
+  }
+}
+
 /* Hero */
 .hero {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 80px;
   height: 40vh;
 }
 
@@ -137,4 +235,373 @@ header {
   color: var(--primary);
   background-color: #fff;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    margin-top: 140px;
+  }
+
+  .hero .text h1 {
+    font-size: 1.5rem;
+  }
+  .hero .text h3 {
+    font-size: 1rem;
+  }
+
+  .hero form input {
+    width: 90%;
+    padding: 12px 26px;
+  }
+
+  .hero form input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .hero form button {
+    right: 5%;
+    font-size: 0.8rem;
+  }
+}
+
+/* Content */
+
+.promo {
+  margin: 50px 0;
+}
+
+.promo .carousel {
+  display: flex;
+  column-gap: 50px;
+  margin-top: 20px;
+}
+
+.promo .carousel .carousel-item {
+  flex: 1;
+  height: 200px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px;
+  color: #fff;
+}
+
+.promo .carousel .carousel-item h3 {
+  font-weight: 600;
+}
+
+.promo .carousel .carousel-item h5 {
+  font-weight: 400;
+}
+
+.promo .carousel .carousel-item button {
+  height: 2.75rem;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.2s;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+.promo .carousel .carousel-item button:hover {
+  background-color: var(--light-primary);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.promo .carousel .item1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/carousel1/img1.jpg);
+}
+
+.promo .carousel .item2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/carousel1/img2.jpg);
+}
+
+@media only screen and (max-width: 768px) {
+  .promo h2 {
+    font-size: 1.17rem;
+  }
+
+  .promo h4 {
+    font-size: 0.83rem;
+  }
+
+  .promo .carousel {
+    column-gap: 14px;
+  }
+
+  .promo .carousel .carousel-item {
+    height: 150px;
+    padding: 20px 10px;
+  }
+
+  .promo .carousel .carousel-item h3 {
+    font-size: 0.8em;
+  }
+
+  .promo .carousel .carousel-item h5 {
+    font-size: 0.6em;
+  }
+
+  .promo .carousel .carousel-item button {
+    font-size: 0.5rem;
+    height: 2rem;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+}
+
+/* Recomendation */
+
+.recomendation {
+  margin: 80px 0;
+}
+
+.recomendation .continent {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.recomendation .continent button {
+  height: 2rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  transition: 0.2s;
+  padding: 0 20px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.recomendation .continent .active {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.recomendation .continent button:hover {
+  color: #fff;
+  background-color: var(--primary);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.recomendation .carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.recomendation .carousel .carousel-item {
+  flex: 1;
+}
+
+.recomendation .carousel .carousel-item .card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  height: 280px;
+  border-radius: 10px;
+}
+
+.recomendation .carousel .carousel-item .card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.recomendation .carousel .carousel-item .card .text {
+  padding: 5px 20px;
+  height: 90px;
+}
+
+.recomendation .carousel .carousel-item .card .text h4 {
+  font-weight: 500;
+}
+
+.recomendation .carousel .carousel-item .card .text h5 {
+  color: var(--primary);
+}
+
+.recomendation .carousel .carousel-item .card h3 {
+  color: var(--orange);
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .recomendation h2 {
+    font-size: 1.17rem;
+  }
+
+  .recomendation .continent {
+    column-gap: 5px;
+    margin-bottom: 30px;
+  }
+
+  .recomendation .continent button {
+    height: 1.6rem;
+    font-size: 0.5rem;
+    padding: 0 10px;
+  }
+
+  .recomendation .carousel {
+    column-gap: 10px;
+  }
+
+  .recomendation .carousel .carousel-item .card {
+    height: 140px;
+  }
+
+  .recomendation .carousel .carousel-item .card img {
+    height: 70px;
+  }
+
+  .recomendation .carousel .carousel-item .card .text {
+    padding: 2px 8px;
+    height: 40px;
+  }
+
+  .recomendation .carousel .carousel-item .card .text h4 {
+    font-size: 0.5rem;
+  }
+
+  .recomendation .carousel .carousel-item .card .text h5 {
+    font-size: 0.3rem;
+  }
+
+  .recomendation .carousel .carousel-item .card h3 {
+    font-size: 0.4rem;
+    margin-left: 8px;
+  }
+}
+
+/* Recomendation Vacation */
+.recom-vacation h2 {
+  margin-bottom: 20px;
+}
+
+.recom-vacation .carousel .carousel-item .card {
+  height: 320px;
+}
+
+.recom-vacation .carousel .carousel-item .card .text h6 {
+  color: var(--orange);
+  margin: 5px 0;
+}
+
+.recom-vacation .carousel .carousel-item .card h3 {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .recom-vacation .carousel .carousel-item .card {
+    height: 175px;
+  }
+  .recom-vacation .carousel .carousel-item .card .text h6 {
+    font-size: 0.35rem;
+  }
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  /* column-gap: 100px; */
+}
+
+footer .container .text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  color: #fff;
+}
+
+footer .container .text img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+footer .container .text h4 {
+  font-weight: 600;
+}
+
+footer .container .page {
+  display: flex;
+  column-gap: 80px;
+}
+
+footer .container .page .page1,
+.page2,
+.page3 {
+  color: #fff;
+  margin-top: 40px;
+}
+
+footer .container .page .page1 h4,
+.page2 h4,
+.page3 h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+footer .container .page .page1 h5,
+.page2 h5,
+.page3 h5 {
+  margin-bottom: 10px;
+}
+
+footer .container .download {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 40px;
+}
+
+footer .container .download h4 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer .container .text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: #fff;
+  }
+
+  footer .container .page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .container .download {
+    row-gap: 10px;
+  }
+
+  footer .container .download img {
+    width: 120px;
+  }
 }
