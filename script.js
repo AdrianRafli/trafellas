@@ -1,7 +1,8 @@
-let menu = document.querySelector("#menu");
-let navbar = document.querySelector(".navbar-nav");
+let menu = document.querySelector(".toggle-btn");
+let menuIcon = document.querySelector(".toggle-btn i");
+let dropDown = document.querySelector(".dropdown");
 
 menu.onclick = () => {
-  menu.classList.toggle("fa-x");
-  navbar.classList.toggle("open");
+  menuIcon.classList.toggle("fa-x");
+  dropDown.classList.toggle("open");
 };
