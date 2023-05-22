@@ -16,7 +16,6 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  border: none;
   text-decoration: none;
   scroll-behavior: smooth;
 }
@@ -28,6 +27,10 @@ li {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+button {
+  border: none;
 }
 
 h1,
@@ -42,15 +45,31 @@ h6 {
   font-weight: 400;
 }
 
+.bold {
+  font-weight: 600;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: var(--grey);
+  height: 1px;
+}
+
 /* Header */
 header {
+  min-height: 100vh;
+  position: relative;
+}
+
+.home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/home1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
-  position: relative;
 }
 
 .container {
@@ -214,8 +233,12 @@ header {
 /* Hero */
 .hero {
   width: 100%;
-  margin-top: 90px;
-  height: 40vh;
+  /* margin-top: 90px; */
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .hero .text {
@@ -232,14 +255,15 @@ header {
   font-weight: 300;
 }
 
-.hero form {
+.hero > form {
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
   position: relative;
 }
 
-.hero form input {
+.hero > form > input {
   width: 50%;
   padding: 16px 30px;
   border-radius: 20px;
@@ -247,7 +271,7 @@ header {
   border: none;
 }
 
-.hero form button {
+.hero > form > button {
   position: absolute;
   top: 0;
   right: 26%;
@@ -262,6 +286,7 @@ header {
 
 @media only screen and (max-width: 768px) {
   .hero {
+    height: 30vh;
     margin-top: 140px;
   }
 
@@ -272,16 +297,16 @@ header {
     font-size: 1rem;
   }
 
-  .hero form input {
+  .hero > form > input {
     width: 90%;
     padding: 12px 26px;
   }
 
-  .hero form input::placeholder {
+  .hero > form > input::placeholder {
     font-size: 0.8rem;
   }
 
-  .hero form button {
+  .hero > form > button {
     right: 5%;
     font-size: 0.8rem;
   }
@@ -627,4 +652,236 @@ footer .container .download h4 {
   footer .container .download img {
     width: 120px;
   }
+}
+
+/* =================================================== */
+/* |                    Flight Page                    */
+/* =================================================== */
+
+.flight {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/flight.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flight-header .hero {
+  position: relative;
+  height: 40vh;
+}
+
+.hero .card {
+  position: absolute;
+  margin-top: 600px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  width: 800px;
+  height: 380px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.input-trip-type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-trip-type label {
+  font-size: 0.83em;
+  margin-left: 8px;
+}
+
+.input-trip-type #oneWay {
+  margin-left: 15px;
+}
+
+.form-flight {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.form-flight > hr {
+  margin-top: 30px;
+}
+
+.form-top,
+.form-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-top {
+  justify-content: space-between;
+}
+
+.form-bottom input,
+.form-bottom select {
+  width: 170px;
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+
+.form-bottom .select {
+  margin-left: 46px;
+}
+
+.form-top input,
+.form-bottom input {
+  border-color: var(--grey);
+  border-radius: 8px;
+}
+
+.footer-form {
+  width: 100%;
+}
+
+.footer-form .submit {
+  float: right;
+  margin-top: 30px;
+  width: 120px;
+  height: 2.75rem;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: scale 0.2 ease;
+}
+
+.footer-form .submit:hover {
+  background-color: var(--light-primary);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/* Recomendation Section */
+.flight-recomendation {
+  padding-top: 80px;
+}
+
+/* Description Section */
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.top-description,
+.bottom-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-description .text,
+.bottom-description .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottom-description .text {
+  margin-left: 130px;
+}
+
+.top-description > img,
+.bottom-description > img {
+  border-radius: 20px;
+  width: 500px;
+  height: 360px;
+}
+
+/* Type Section */
+.type {
+  margin-top: 100px;
+}
+
+.type h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.type h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.partner,
+.payment {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.partner h3,
+.partner h5,
+.payment h3,
+.payment h5 {
+  text-align: center;
+}
+
+.partner-logo,
+.payment-logo {
+  margin-top: 20px;
+}
+
+.payment-logo .row,
+.partner-logo .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-logo .row img,
+.payment-logo .row img {
+  margin: 0 10px 10px;
+}
+
+.payment-logo .row img {
+  width: 40px;
+  height: auto;
+}
+
+/* FAQ Section */
+.faq {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.faq h3 {
+  margin-bottom: 20px;
+}
+
+.faq h3 span {
+  color: var(--primary);
+}
+
+.faq-question {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  width: 600px;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+
+.faq-question .question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.question .arrow i {
+  font-size: 1.5em;
 }
