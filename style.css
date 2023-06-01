@@ -412,7 +412,6 @@ header {
 .recomendation .continent {
   display: flex;
   column-gap: 10px;
-  margin-bottom: 30px;
 }
 
 .recomendation .continent button {
@@ -442,6 +441,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
   column-gap: 30px;
 }
 
@@ -718,6 +718,10 @@ footer .container .download h4 {
   justify-content: space-between;
 }
 
+.form-top input {
+  padding: 5px;
+}
+
 .form-bottom input,
 .form-bottom select {
   width: 170px;
@@ -884,4 +888,38 @@ footer .container .download h4 {
 
 .question .arrow i {
   font-size: 1.5em;
+}
+
+/* =================================================== */
+/* |                    Train Page                    */
+/* =================================================== */
+.train {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/train.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* =================================================== */
+/* |                    Stays Page                    */
+/* =================================================== */
+.stays {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/stays.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-stays .form-top div {
+  width: 100%;
+}
+
+.form-stays .form-top input {
+  width: 100%;
+}
+
+.form-stays .form-bottom div {
+  margin-right: 30px;
 }

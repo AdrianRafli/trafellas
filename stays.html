@@ -41,11 +41,11 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <title>Flight - Trafellas</title>
+    <title>Stays - Trafellas</title>
   </head>
   <body>
     <!-- Navbar -->
-    <header class="flight">
+    <header class="stays">
       <div class="container flight-header">
         <nav class="navbar">
           <div class="logo">
@@ -58,13 +58,13 @@
               <a href="../"><i class="fa-solid fa-magnifying-glass"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-plane"></i></a>
+              <a href="flight.html"><i class="fa-solid fa-plane"></i></a>
             </li>
             <li>
               <a href="train.html"><i class="fa-solid fa-train"></i></a>
             </li>
             <li>
-              <a href="stays.html"><i class="fa-solid fa-hotel"></i></a>
+              <a href="#"><i class="fa-solid fa-hotel"></i></a>
             </li>
           </ul>
           <div class="user-button">
@@ -114,7 +114,7 @@
           <div class="card">
             <form action="">
               <div class="header-form">
-                <h4>Find the best flight ticket prices & promos here</h4>
+                <h4>Find the best hotel prices & promos here</h4>
                 <div class="input-trip-type">
                   <input id="roundTrip" name="radTrip" type="radio" checked />
                   <label for="roundTrip">Round Trip</label>
@@ -123,60 +123,28 @@
                 </div>
                 <hr />
               </div>
-              <div class="form-flight">
+              <div class="form-flight form-stays">
                 <div class="form-top">
                   <div>
-                    <label for="from">Form</label><br />
+                    <label for="from">Choose the hotel place you want</label
+                    ><br />
                     <input
                       type="text"
                       id="from"
                       name="from"
-                      placeholder="City or Airport"
+                      placeholder="Where do you want to stay?"
                     />
-                  </div>
-                  <div>
-                    <label for="to">To</label><br />
-                    <input
-                      type="text"
-                      id="to"
-                      name="to"
-                      placeholder="Where to?"
-                    />
-                  </div>
-                  <div>
-                    <label for="depart">Form</label><br />
-                    <input type="date" id="depart" name="depart" />
-                  </div>
-                  <div>
-                    <input
-                      type="checkbox"
-                      name="checkReturn"
-                      id="checkReturn"
-                    />
-                    <label for="return">Return</label><br />
-                    <input type="date" id="return" name="return" />
                   </div>
                 </div>
                 <br />
                 <div class="form-bottom">
                   <div>
-                    <label for="passanger">Passanger</label><br />
-                    <input
-                      type="number"
-                      id="passanger"
-                      name="passanger"
-                      min="1"
-                      max="10"
-                      value="1"
-                    />
+                    <label for="checkIn">Check-in</label><br />
+                    <input type="date" id="checkIn" name="checkIn" />
                   </div>
-                  <div class="select">
-                    <label for="class">Cabin Class</label><br />
-                    <select name="class" id="class">
-                      <option value="economy">Economy</option>
-                      <option value="business">Business</option>
-                      <option value="First">First</option>
-                    </select>
+                  <div>
+                    <label for="checkOut">Check-out</label><br />
+                    <input type="date" id="checkOut" name="checkOut" />
                   </div>
                 </div>
                 <hr />
@@ -253,16 +221,20 @@
               <br />
               the flight tickets you need quickly and easily.
             </h5>
-            <h4 class="bold">Many Airline Options</h4>
+            <h4 class="bold">Many Hotel Options</h4>
             <h5>
-              There are many choices of airlines with the most complete routes
+              There are many accommodation options available around the world
               <br />
-              around the world. Leisure and business trips will become more
+              with the best facilities and comfort for your vacation and <br />
+              business trip. From star hotels to hostels, apartments and luxury
               <br />
-              economical and practical
+              villas, everything can be tailored to suit your needs and budget.
+              <br />
+              With so many options, you can find lodging to suit your <br />
+              preferences and travel style anywhere in the world.
             </h5>
           </div>
-          <img src="img/plane/airport.jpeg" alt="airport" />
+          <img src="img/plane/hotel.jpg" alt="airport" />
         </div>
         <div class="bottom-description">
           <img src="img/plane/vacation.jpeg" alt="airport" />
@@ -290,71 +262,27 @@
         </div>
       </section>
 
-      <section class="type">
-        <h3 class="bold">Let's Get To Know The 3 Types Of Flight Classes</h3>
-        <h5>
-          If you are a frequent flyer, you are likely familiar with the
-          different categories of airplane seats. While most people are familiar
-          with economy, business, and first-class seats, But do you know that
-          there are other types of airplane seats?
-        </h5>
-        <h4 class="bold">Economy Class</h4>
-        <h5>
-          Economy class is the most common class. The seats are quite
-          comfortable even though the size of the seats is quite small when
-          compared to other classes. Seats in economy class usually have a
-          distance that is not too wide. In fact, if the seat in front is backed
-          up, it will make the distance with the passenger behind narrow. Some
-          airlines will provide food and drinks for long trips.
-        </h5>
-        <h4 class="bold">Business Class</h4>
-        <h5>
-          Having seats that are more comfortable than economy class, business
-          class seat types, set a slightly higher price. The reason is, the
-          price paid is very comparable to the facilities obtained. For example,
-          in business class, you will get a seat that can be tilted up to 180
-          degrees. So that it will make passengers feel more comfortable to
-          rest. There are also other facilities such as an LCD screen for
-          entertainment and a power outlet.
-        </h5>
-        <h4 class="bold">First Class</h4>
-        <h5>
-          In terms of price, compared to the other three classes, the first
-          class does have the highest price. A series of facilities that can be
-          obtained when you are in first class include the most comfortable
-          seats, wide sizes, and there are barriers to maintain privacy. In
-          addition, several airlines provide shuttle services, check-ins, to a
-          variety of luxurious and complete meals.
-        </h5>
-      </section>
-
       <section class="partner">
-        <h3 class="bold">Airline Partners</h3>
+        <h3 class="bold">Hotels Partners</h3>
         <h5>
-          With various partner airlines, we are ready to fly you anywhere and
+          With various hotels partner, we ensure your comfort while staying
           <br />
-          make your vacation dreams come true.
+          anywhere in the world.
         </h5>
         <div class="partner-logo">
           <div class="row">
-            <img src="img/airline/garuda.webp" alt="Garuda" />
-            <img src="img/airline/batik.webp" alt="Batik Air" />
-            <img src="img/airline/citilink.webp" alt="Citilink" />
-            <img src="img/airline/sriwijaya.webp" alt="Sriwijaya" />
-            <img src="img/airline/japanair.webp" alt="Japan AirLine" />
-            <img src="img/airline/american.webp" alt="American Airline" />
-            <img src="img/airline/airasia.webp" alt="Airasia" />
-            <img src="img/airline/singapore.webp" alt="Singapore Airline" />
+            <img src="img/hotel/accor.webp" alt="Garuda" />
+            <img src="img/hotel/aerowisata.webp" alt="Batik Air" />
+            <img src="img/hotel/archipelago.webp" alt="Citilink" />
+            <img src="img/hotel/artotel.webp" alt="Sriwijaya" />
+            <img src="img/hotel/horison.webp" alt="Japan AirLine" />
           </div>
           <div class="row">
-            <img src="img/airline/koreanair.webp" alt="Korean Airline" />
-            <img src="img/airline/chinaair.webp" alt="China Airline" />
-            <img src="img/airline/emirates.webp" alt="Emirates" />
-            <img src="img/airline/jet.webp" alt="jet" />
-            <img src="img/airline/philiphines.webp" alt="philiphines" />
-            <img src="img/airline/vietnam.webp" alt="Vietnam" />
-            <img src="img/airline/brunei.webp" alt="brunei" />
-            <img src="img/airline/allnippon.webp" alt="All Nippon" />
+            <img src="img/hotel/ihg.webp" alt="American Airline" />
+            <img src="img/hotel/sahid.webp" alt="Airasia" />
+            <img src="img/hotel/sheraton.webp" alt="Singapore Airline" />
+            <img src="img/hotel/tauzia.webp" alt="Singapore Airline" />
+            <img src="img/hotel/terra.webp" alt="Singapore Airline" />
           </div>
         </div>
       </section>
