@@ -5,6 +5,7 @@
   --primary: #2c74b3;
   --light-primary: #2f9eff;
   --grey: #6a6a6a;
+  --light-grey: #d9d9d9;
   --orange: #df5505;
   --black: #000;
 }
@@ -47,6 +48,10 @@ h6 {
 
 .bold {
   font-weight: 600;
+}
+
+.light {
+  font-weight: 300;
 }
 
 hr {
@@ -922,4 +927,484 @@ footer .container .download h4 {
 
 .form-stays .form-bottom div {
   margin-right: 30px;
+}
+
+/* =================================================== */
+/* |                    Search Page                    */
+/* =================================================== */
+.searchPage {
+  background-image: none;
+  background-color: #fff;
+  min-height: 0;
+}
+
+.searchPage .container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.searchPage li a {
+  color: var(--black) !important;
+}
+
+.searchPage li a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid #000 !important;
+  transform: scaleX(0);
+  transition: 0.1s linear;
+}
+
+.searchContainer {
+  display: flex;
+  gap: 60px;
+  margin: 80px 0;
+}
+
+.filter {
+  flex: 1;
+}
+
+.sortTicket {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  background-color: var(--primary);
+}
+
+.sortTicket select {
+  border: none;
+  color: white;
+  background-color: var(--primary);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sortTicket label {
+  font-size: 22px;
+}
+
+.sortTicket select option {
+  background-color: white;
+  color: black;
+}
+
+.filter-airline {
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.tickets {
+  flex: 3;
+}
+
+.tickets .destination {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tickets .destination a {
+  display: flex;
+}
+
+.tickets .destination a button,
+.ticket-footer a button {
+  width: 160px;
+  height: 40px;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 1rem;
+  transition: scale 0.2 ease;
+}
+
+.tickets .destination a button:hover,
+.ticket-footer a button:hover {
+  background-color: var(--light-primary);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.ticket {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.ticket-body,
+.ticket-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.ticket-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.ticket-info {
+  display: flex;
+  gap: 20px;
+}
+
+.ticket-info h4 {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/* =================================================== */
+/* |                    Order Page                     */
+/* =================================================== */
+
+.order-container {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 500px;
+  margin-bottom: 60px;
+}
+
+.timeline hr {
+  height: 4px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+.timeline-item {
+  margin-right: 10px;
+}
+
+.timeline-item h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.timeline-item .icon {
+  background-color: var(--light-grey);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  font-size: 30px;
+}
+
+.blue {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.detail {
+  flex: 3;
+}
+
+.order-detail {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.order-detail input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 18px;
+  font-size: 18px;
+}
+
+.order-info {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 60px;
+}
+
+.detail-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.payment-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-info h2 {
+  color: var(--primary);
+}
+
+.order-footer {
+  background-image: none;
+  background-color: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.btn-payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-payment a button {
+  width: 400px;
+  height: 60px;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: scale 0.2 ease;
+}
+
+.btn-payment a button:hover {
+  background-color: var(--light-primary);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/* =================================================== */
+/* |               Payment Method Page                 */
+/* =================================================== */
+
+.payment-container .content {
+  margin-bottom: 80px;
+}
+
+.payment-methods {
+  flex: 3;
+}
+
+.payment-desc {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.payment-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.payment-card h2 {
+  margin-bottom: 16px;
+}
+
+.payment-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 10px;
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+.payment-item:hover {
+  background-color: rgb(240, 240, 240);
+  transition: all 0.5s ease;
+}
+
+.payment-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.payment-img img {
+  width: auto !important;
+  height: 40px !important;
+}
+
+.payment-img img {
+  width: 50px;
+}
+
+/* =================================================== */
+/* |               Payment Page                        */
+/* =================================================== */
+
+.payment-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.payment-detail a h4 {
+  color: var(--primary);
+}
+
+.payment-detail .table .price,
+.payment-detail .table .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #000;
+  padding: 10px;
+}
+
+.payment-detail .table .price {
+  border-bottom: 0;
+}
+
+.payment-detail span {
+  color: var(--primary);
+}
+
+.payment-detail img {
+  width: 100px;
+}
+
+.payment-detail ul li {
+  list-style: circle;
+  margin-left: 20px;
+}
+
+/* =================================================== */
+/* |               Logo Page                        */
+/* =================================================== */
+
+.login {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.back {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  padding: 20px 28px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  color: var(--black);
+  font-size: 20px;
+}
+
+.login > img {
+  width: 180px;
+  margin-bottom: 50px;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  gap: 20px;
+  padding: 30px 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.login-card h1,
+.login-card .account a {
+  color: var(--primary);
+}
+
+.login-card form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form input {
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.login-card .login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card .login-forgot {
+  display: flex;
+  justify-content: end;
+}
+
+.login-card .login-forgot h5 {
+  cursor: pointer;
+}
+
+.login-card > a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-card a button {
+  height: 40px;
+  width: 80%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login-card a button:last-child {
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+.login-card a img {
+  width: 18px;
+}
+
+.login-card .account {
+  margin-top: 20px;
+  display: flex;
+}
+
+.register-card a button {
+  margin-top: 10px;
 }
