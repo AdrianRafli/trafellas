@@ -81,6 +81,10 @@ header {
   padding: 0 8%;
 }
 
+.ticket-container {
+  padding: 0 14%;
+}
+
 /* Navbar */
 .navbar {
   width: 100%;
@@ -115,7 +119,7 @@ header {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #fff;
+  border-bottom: 4px solid #fff;
   transform: scaleX(0);
   transition: 0.1s linear;
 }
@@ -276,7 +280,7 @@ header {
   border: none;
 }
 
-.hero > form > button {
+.hero > form > a > button {
   position: absolute;
   top: 0;
   right: 26%;
@@ -766,11 +770,6 @@ footer .container .download h4 {
   cursor: pointer;
 }
 
-/* Recomendation Section */
-.flight-recomendation {
-  padding-top: 80px;
-}
-
 /* Description Section */
 .description {
   display: flex;
@@ -1058,7 +1057,7 @@ footer .container .download h4 {
 
 .ticket-info {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .ticket-info h4 {
@@ -1137,7 +1136,8 @@ footer .container .download h4 {
   padding: 10px;
   border-radius: 10px;
   margin-top: 18px;
-  font-size: 18px;
+  font-size: 16px;
+  padding: 16px;
 }
 
 .order-info {
@@ -1295,6 +1295,7 @@ footer .container .download h4 {
 
 .payment-detail span {
   color: var(--primary);
+  cursor: pointer;
 }
 
 .payment-detail img {
@@ -1360,7 +1361,7 @@ footer .container .download h4 {
 }
 
 .login-form input {
-  padding: 8px;
+  padding: 10px 20px;
   border-radius: 20px;
 }
 
@@ -1391,9 +1392,15 @@ footer .container .download h4 {
   cursor: pointer;
 }
 
-.login-card a button:last-child {
-  border: 1px solid #000;
+.login-card a button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
+}
+
+.border {
+  border: 2px solid #000;
 }
 
 .login-card a img {
