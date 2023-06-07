@@ -960,6 +960,10 @@ footer .container .download h4 {
   margin: 80px 0;
 }
 
+.searchContainer h2 {
+  font-size: 1.3rem;
+}
+
 .filter {
   flex: 1;
 }
