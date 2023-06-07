@@ -71,7 +71,7 @@ header {
 
 .home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/home1.jpg);
+    url(../../img/home1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -327,13 +327,13 @@ header {
   margin: 50px 0;
 }
 
-.promo .carousel {
+.promo .carousel-content {
   display: flex;
   column-gap: 50px;
   margin-top: 20px;
 }
 
-.promo .carousel .carousel-item {
+.promo .carousel-content .carousel-item {
   flex: 1;
   height: 200px;
   border-radius: 20px;
@@ -344,15 +344,15 @@ header {
   color: #fff;
 }
 
-.promo .carousel .carousel-item h3 {
+.promo .carousel-content .carousel-item h3 {
   font-weight: 600;
 }
 
-.promo .carousel .carousel-item h5 {
+.promo .carousel-content .carousel-item h5 {
   font-weight: 400;
 }
 
-.promo .carousel .carousel-item button {
+.promo .carousel-content .carousel-item button {
   height: 2.75rem;
   background-color: var(--primary);
   color: #fff;
@@ -362,20 +362,20 @@ header {
   margin-top: 30px;
 }
 
-.promo .carousel .carousel-item button:hover {
+.promo .carousel-content .carousel-item button:hover {
   background-color: var(--light-primary);
   transition: 0.2s;
   cursor: pointer;
 }
 
-.promo .carousel .item1 {
+.promo .carousel-content .item1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(img/carousel1/img1.jpg);
+    url(../../img/carousel1/img1.jpg);
 }
 
-.promo .carousel .item2 {
+.promo .carousel-content .item2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(img/carousel1/img2.jpg);
+    url(../../img/carousel1/img2.jpg);
 }
 
 @media only screen and (max-width: 768px) {
@@ -387,24 +387,24 @@ header {
     font-size: 0.83rem;
   }
 
-  .promo .carousel {
+  .promo .carousel-content {
     column-gap: 14px;
   }
 
-  .promo .carousel .carousel-item {
+  .promo .carousel-content .carousel-item {
     height: 150px;
     padding: 20px 10px;
   }
 
-  .promo .carousel .carousel-item h3 {
+  .promo .carousel-content .carousel-item h3 {
     font-size: 0.8em;
   }
 
-  .promo .carousel .carousel-item h5 {
+  .promo .carousel-content .carousel-item h5 {
     font-size: 0.6em;
   }
 
-  .promo .carousel .carousel-item button {
+  .promo .carousel-content .carousel-item button {
     font-size: 0.5rem;
     height: 2rem;
     padding: 0 10px;
@@ -568,7 +568,7 @@ header {
 footer {
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/footer.jpg);
+    url(../../img/footer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -669,7 +669,7 @@ footer .container .download h4 {
 
 .flight {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/flight.jpg);
+    url(../../img/flight.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -899,7 +899,7 @@ footer .container .download h4 {
 /* =================================================== */
 .train {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/train.jpg);
+    url(../../img/train.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -910,7 +910,7 @@ footer .container .download h4 {
 /* =================================================== */
 .stays {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/stays.jpg);
+    url(../../img/stays.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -6,3 +6,9 @@ menu.onclick = () => {
   menuIcon.classList.toggle("fa-x");
   dropDown.classList.toggle("open");
 };
+
+// Swiper JS
+const swiper = new Swiper(".swiper", {
+  speed: 400,
+  spaceBetween: 100,
+});
