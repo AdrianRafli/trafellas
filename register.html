@@ -51,32 +51,35 @@
       <img src="img/logodark.png" alt="logo" />
       <div class="login-card register-card">
         <h1>Sign Up</h1>
-        <form action="">
-          <div class="login-form">
+        <form action="/" id="regForm">
+          <div class="input-control">
             <label for="fullname">Fullname</label>
-            <input type="text" name="fullname" />
+            <input id="regUsername" type="text" name="fullname" />
+            <div class="error"></div>
           </div>
-          <div class="login-form">
+          <div class="input-control">
             <label for="email">Email</label>
-            <input type="email" name="email" />
+            <input id="regEmail" type="email" name="email" />
+            <div class="error"></div>
           </div>
-          <div class="login-form">
+          <div class="input-control">
             <label for="pass">Password</label>
-            <input type="password" name="pass" />
+            <input id="regPass" type="password" name="pass" />
+            <div class="error"></div>
           </div>
-          <div class="login-form">
-            <label for="pass">Confirm Password</label>
-            <input type="password" name="pass" />
+          <div class="input-control">
+            <label for="confirm">Confirm Password</label>
+            <input id="confirm" type="password" name="confirm" />
+            <div class="error"></div>
           </div>
+          <button class="blue" type="submit" name="submit">Signup</button>
         </form>
-        <a href="/">
-          <button class="blue">Signup</button>
-        </a>
         <div class="account">
           <h4>Already have an account? &nbsp</h4>
           <a href="login.html">Login</a>
         </div>
       </div>
     </div>
+    <script src="dist/js/validateRegister.js"></script>
   </body>
 </html>

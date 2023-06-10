@@ -378,6 +378,11 @@ header {
     url(../../img/carousel1/img2.jpg);
 }
 
+/* .swiper {
+  width: 00px;
+  height: 100%;
+} */
+
 @media only screen and (max-width: 768px) {
   .promo h2 {
     font-size: 1.17rem;
@@ -446,6 +451,19 @@ header {
   cursor: pointer;
 }
 
+.swiper {
+  width: 1100px;
+  height: 320px;
+}
+
+.swiper-wrapper {
+  margin-left: 1200px;
+}
+
+.swiper-button-prev {
+  margin-right: 500px !important;
+}
+
 .recomendation .carousel {
   display: flex;
   justify-content: center;
@@ -455,7 +473,7 @@ header {
 }
 
 .recomendation .carousel .carousel-item {
-  flex: 1;
+  width: 250px !important;
 }
 
 .recomendation .carousel .carousel-item .card {
@@ -986,8 +1004,9 @@ footer .container .download h4 {
   font-size: 16px;
 }
 
-.sortTicket label {
-  font-size: 22px;
+.sortTicket label,
+.filter-airline h2 {
+  font-size: 18px;
 }
 
 .sortTicket select option {
@@ -1042,6 +1061,11 @@ footer .container .download h4 {
   padding: 20px;
   border-radius: 20px;
   margin: 20px 0;
+}
+
+.ticket h2,
+.ticket-body h2 {
+  font-size: 20px;
 }
 
 .ticket-body,
@@ -1187,7 +1211,7 @@ footer .container .download h4 {
   margin-top: 20px;
 }
 
-.btn-payment a button {
+.btn-payment button {
   width: 400px;
   height: 60px;
   background-color: var(--primary);
@@ -1197,7 +1221,7 @@ footer .container .download h4 {
   transition: scale 0.2 ease;
 }
 
-.btn-payment a button:hover {
+.btn-payment button:hover {
   background-color: var(--light-primary);
   transition: 0.2s;
   cursor: pointer;
@@ -1328,7 +1352,7 @@ footer .container .download h4 {
   position: absolute;
   top: 30px;
   left: 50px;
-  padding: 20px 28px;
+  padding: 10px 18px;
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   color: var(--black);
@@ -1337,7 +1361,7 @@ footer .container .download h4 {
 
 .login > img {
   width: 180px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .login-card {
@@ -1364,12 +1388,23 @@ footer .container .download h4 {
   gap: 20px;
 }
 
-.login-form input {
+.login-card .input-control input {
   padding: 10px 20px;
   border-radius: 20px;
 }
 
-.login-card .login-form {
+.input-control.error input {
+  border: 2px solid #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 14px;
+  height: 13px;
+  margin-top: 2px;
+}
+
+.login-card .input-control {
   display: flex;
   flex-direction: column;
 }
@@ -1383,15 +1418,9 @@ footer .container .download h4 {
   cursor: pointer;
 }
 
-.login-card > a {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.login-card a button {
+.login-card button {
   height: 40px;
-  width: 80%;
+  width: 100%;
   border-radius: 20px;
   cursor: pointer;
 }

@@ -51,32 +51,34 @@
       <img src="img/logodark.png" alt="logo" />
       <div class="login-card">
         <h1>Sign in</h1>
-        <form action="">
-          <div class="login-form">
+        <form action="/" id="loginForm">
+          <div class="input-control">
             <label for="email">Email</label>
-            <input type="email" name="email" />
+            <input id="loginEmail" type="text" name="email" />
+            <div class="error"></div>
           </div>
-          <div class="login-form">
+          <div class="input-control">
             <label for="pass">Password</label>
-            <input type="password" name="pass" />
+            <input id="loginPass" type="password" name="pass" />
+            <div class="error"></div>
           </div>
           <div class="login-forgot">
             <h5>Forgot Passoword?</h5>
           </div>
+          <button class="blue" type="submit" name="submit">Login</button>
+          <a href="#">
+            <button class="border">
+              <img src="img/google.png" alt="google" />
+            </button>
+          </a>
         </form>
-        <a href="/">
-          <button class="blue">Login</button>
-        </a>
-        <a href="#">
-          <button class="border">
-            <img src="img/google.png" alt="google" />
-          </button>
-        </a>
         <div class="account">
           <h4>Don't have an account? &nbsp</h4>
           <a href="register.html">Register</a>
         </div>
       </div>
     </div>
+
+    <script src="dist/js/validateLogin.js"></script>
   </body>
 </html>
