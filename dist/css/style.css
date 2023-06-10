@@ -1294,6 +1294,19 @@ footer .container .download h4 {
 /* |               Payment Page                        */
 /* =================================================== */
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 100;
+  pointer-events: none;
+  filter: blur(3px) brightness(0.4);
+}
+
+.payment-container {
+  z-index: 1;
+}
+
 .payment-detail {
   display: flex;
   flex-direction: column;
@@ -1335,8 +1348,47 @@ footer .container .download h4 {
   margin-left: 20px;
 }
 
+.modal {
+  position: absolute;
+  top: 40%;
+  left: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+  text-align: center;
+  gap: 40px;
+  opacity: 1;
+  transition: 0.8s ease;
+}
+
+.modal i {
+  font-size: 100px;
+}
+
+.modal a button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: white;
+}
+
+.modal a button:hover {
+  background-color: var(--light-primary);
+  cursor: pointer;
+}
+
+.hidden {
+  /* display: none; */
+  opacity: 0;
+}
+
 /* =================================================== */
-/* |               Logo Page                        */
+/* |               Login Page                        */
 /* =================================================== */
 
 .login {
