@@ -450,7 +450,7 @@ header {
 .carousel-button-right {
   z-index: 2;
   position: absolute;
-  top: 210px;
+  top: 170px;
   font-size: 30px;
   padding: 5px 10px;
   background-color: white;
