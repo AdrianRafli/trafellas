@@ -603,7 +603,7 @@ footer {
 
 footer .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   /* column-gap: 100px; */
 }
 
