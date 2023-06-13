@@ -191,54 +191,114 @@
     </header>
 
     <div class="content">
-      <div class="container ticket-container">
+      <div class="container">
         <section class="flight-recomendation recomendation">
           <h2>Destination recomendations for you</h2>
           <h4>Find deals on domestic travels</h4>
-          <!-- <div class="continent">
-            <button class="active">Domestic</button>
-            <button>International</button>
-          </div> -->
 
-          <div class="carousel">
+          <i class="fa-solid fa-angle-left carousel-button-left hidden"></i>
+          <i class="fa-solid fa-angle-right carousel-button-right"></i>
+          <div id="carousel" class="carousel">
             <div class="carousel-item">
-              <div class="card">
-                <img src="img/carousel2/img1.jpg" alt="image carousel" />
+              <div class="card card-ticket">
+                <img src="img/carousel4/img1.jpg" alt="image carousel" />
                 <div class="text">
-                  <h4>Singapore</h4>
-                  <h5><i class="fa-solid fa-location-dot"></i> Singapore</h5>
+                  <h4>
+                    Semarang &nbsp;
+                    <i class="fa-solid fa-arrow-right"></i> &nbsp; Jakarta
+                  </h4>
+                  <div class="card-airline">
+                    <img src="img/airline/lionair.webp" alt="" />
+                    <h5>Lion Air</h5>
+                  </div>
+                  <h5>Economy</h5>
+                </div>
+                <h3 class="price">IDR 607.260</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card card-ticket">
+                <img src="img/carousel4/img2.webp" alt="image carousel" />
+                <div class="text">
+                  <h4>
+                    Semarang &nbsp;
+                    <i class="fa-solid fa-arrow-right"></i> &nbsp; Medan
+                  </h4>
+                  <div class="card-airline">
+                    <img src="img/airline/citilink.webp" alt="" />
+                    <h5>Citylink</h5>
+                  </div>
+                  <h5>Economy</h5>
+                </div>
+                <h3 class="price">IDR 2.770.260</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card card-ticket">
+                <img src="img/carousel4/img3.jpg" alt="image carousel" />
+                <div class="text">
+                  <h4>
+                    Semarang &nbsp;
+                    <i class="fa-solid fa-arrow-right"></i> &nbsp; Denpasar
+                  </h4>
+                  <div class="card-airline">
+                    <img src="img/airline/garuda.webp" alt="" />
+                    <h5>Garuda Indonesia</h5>
+                  </div>
+                  <h5>Economy</h5>
+                </div>
+                <h3 class="price">IDR 2.747.260</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card card-ticket">
+                <img src="img/carousel4/img4.png" alt="image carousel" />
+                <div class="text">
+                  <h4>
+                    Semarang &nbsp;
+                    <i class="fa-solid fa-arrow-right"></i> &nbsp; Makasar
+                  </h4>
+                  <div class="card-airline">
+                    <img src="img/airline/lionair.webp" alt="" />
+                    <h5>Lion Air</h5>
+                  </div>
+                  <h5>Economy</h5>
                 </div>
                 <h3 class="price">IDR 4.453.260</h3>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card">
-                <img src="img/carousel2/img2.jpg" alt="image carousel" />
+              <div class="card card-ticket">
+                <img src="img/carousel4/img5.jpg" alt="image carousel" />
                 <div class="text">
-                  <h4>Kyoto</h4>
-                  <h5><i class="fa-solid fa-location-dot"></i> Japan</h5>
+                  <h4>
+                    Semarang&nbsp;
+                    <i class="fa-solid fa-arrow-right"></i>&nbsp; Aceh
+                  </h4>
+                  <div class="card-airline">
+                    <img src="img/airline/garuda.webp" alt="" />
+                    <h5>Garuda Indonesia</h5>
+                  </div>
+                  <h5>Economy</h5>
                 </div>
-                <h3 class="price">IDR 17.389.250</h3>
+                <h3 class="price">IDR 3.724.260</h3>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card">
-                <img src="img/carousel2/img3.jpg" alt="image carousel" />
+              <div class="card card-ticket">
+                <img src="img/carousel4/img1.jpg" alt="image carousel" />
                 <div class="text">
-                  <h4>Bali</h4>
-                  <h5><i class="fa-solid fa-location-dot"></i> Indonesia</h5>
+                  <h4>
+                    Semarang &nbsp;
+                    <i class="fa-solid fa-arrow-right"></i> &nbsp; Jakarta
+                  </h4>
+                  <div class="card-airline">
+                    <img src="img/airline/lionair.webp" alt="" />
+                    <h5>Lion Air</h5>
+                  </div>
+                  <h5>Economy</h5>
                 </div>
-                <h3 class="price">IDR 2.747.980</h3>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <img src="img/carousel2/img4.jpg" alt="image carousel" />
-                <div class="text">
-                  <h4>Bangkok</h4>
-                  <h5><i class="fa-solid fa-location-dot"></i> Thailand</h5>
-                </div>
-                <h3 class="price">IDR 8.685.050</h3>
+                <h3 class="price">IDR 4.453.260</h3>
               </div>
             </div>
           </div>
@@ -461,7 +521,7 @@
     </div>
 
     <footer>
-      <div class="container ticket-container">
+      <div class="container">
         <div class="text">
           <img src="img/logo.png" alt="logo" />
           <h5>
@@ -501,5 +561,6 @@
     </footer>
 
     <script src="dist/js/accordion.js"></script>
+    <script src="dist/js/carousel.js"></script>
   </body>
 </html>
